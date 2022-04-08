@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8"><title>Top Restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Restaurant</title>
+</head>
+<body>
+    {% include 'includes/header.html' %}
+
+    <main>
+        <section>
+            <h1>{{ restaurant.get('name') }}</h1>
+            <img src="{{ restaurant.get('image_url') }}" alt="restaurant image"/>
+            <h3>{{ restaurant.get('display_address') }}</h3>
+            <p>Price: {{restaurant.get('price')}}</p>
+            <p>Rating: {{restaurant.get('rating')}}</p>
+            <p># Reviews: {{restaurant.get('review_count')}}</p>
+        </section>
+    </main>
+</body>
+</html>
+
+
+<!--
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Box Model</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section>
+        <h2>Card 1</h2>
+        <img src="https://www.masslive.com/resizer/4uAp_CDZU1HSvnMTi7DX-NP5da8=/1280x0/smart/advancelocal-adapter-image-uploads.s3.amazonaws.com/image.masslive.com/home/mass-media/width2048/img/bruins_impact/photo/6-15-11-bruins-stanley-cup-championsjpg-c44c4546138baf60.jpg" alt="Best hockey team" />
+        <p>Lorem ipsum dolor sit amet, cu soluta concludaturque vim, summo voluptatibus ex sea. Est id aperiri offendit vulputate, legere malorum est et. Zril volutpat sit id, no aeterno apeirian mei.</p>
+        <button>Button</button>
+    </section>
+  
+</body>
+</html>
+-->
